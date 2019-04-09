@@ -21,6 +21,7 @@ public class Detail extends AppCompatActivity {
 
         //รับค่าจาก Intent มาแสดงบน xml
         detailTextView.setText(getIntent().getStringExtra("Detail"));
+        logoImageView.setImageResource(getIntent().getIntExtra("logo",R.drawable.logo_01));
         //logoImageView.setImageResource(getIntent().getExtras("logo",R.drawable.logo_01));
 
     }
